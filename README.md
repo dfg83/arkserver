@@ -33,17 +33,9 @@ Annunaki Genesis
 
 arkmanager installmod 538986229
 
-Structures Plus
-
-arkmanager installmod 731604991
-
 Extinction Core
 
 arkmanager installmod 817096835
-
-Teleporters
-
-arkmanager installmod 889745138
 
 arkmanager installmod 1404697612
 
