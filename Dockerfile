@@ -22,6 +22,8 @@ COPY arkmanager/arkmanager.cfg /etc/arkmanager/arkmanager.cfg
 COPY arkmanager/instance.cfg /etc/arkmanager/instances/main.cfg
 COPY arkserver.sh /arkserver/arkserver.sh
 COPY log.sh /arkserver/log.sh
+COPY gamesettings/config/Game.ini /ark/config/Game.ini
+COPY gamesettings/config/GameUserSettings.ini /ark/config/GameUserSettings.ini
 
 RUN chown -R steam:steam /home/steam /ark /arkserver && chmod -R 777 /root /arkserver
 
