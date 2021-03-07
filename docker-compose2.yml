@@ -1,0 +1,77 @@
+version: '3'
+volumes:
+  ark:
+  steam:
+services:
+  ark:
+    image: jkread/arkserver:latest
+    container_name: ark
+    network_mode: bridge
+    restart: always
+    ports:
+      - 7777:7777
+      - 7777:7777/udp
+      - 7778:7778
+      - 7778:7778/udp
+      - 27015:27015
+      - 27015:27015/udp
+    volumes:
+      - ark:/ark
+      - steam:/home/steam
+    environment:
+      - Europe/Germany
+      - am_ark_SessionName=Ark Docker Session
+      - am_serverMap=TheIsland
+      - am_ark_ServerPassword=letmein
+      - am_ark_ServerAdminPassword=pleasechangeme
+      - am_ark_MaxPlayers=70
+      - am_ark_QueryPort=27015
+      - am_ark_Port=7778
+      - am_ark_RCONPort=32330
+      - am_arkwarnminutes=15
+      - am_arkAutoUpdateOnStart=true
+      - am_arkBackupPreUpdate=true
+      - am_arkMaxBackupSizeMB=500
+      - am_arkflag_crossplay=false
+      - am_arkflag_NoBattlEye=true
+      - am_ark_GameModIds=111111111,566885854,731604991,761535755,821530042,889745138,1404697612
+      - am_OverrideOfficialDifficulty=5.0
+- am_DifficultyOffset=1.0
+- am_NewMaxStructuresInRange=6000.000000
+- am_DayCycleSpeedScale=1.000000
+- am_DayTimeSpeedScale=0.500000
+- am_NightTimeSpeedScale=3.000000
+- am_DinoDamageMultiplier=1.000000
+- am_PlayerDamageMultiplier=1.000000
+- am_StructureDamageMultiplier=1.000000
+- am_PlayerResistanceMultiplier=1.000000
+- am_DinoResistanceMultiplier=1.000000
+- am_StructureResistanceMultiplier=0.500000
+- am_XPMultiplier=2.000000
+- am_TamingSpeedMultiplier=2.000000
+- am_HarvestAmountMultiplier=5.000000
+- am_PlayerCharacterWaterDrainMultiplier=1.000000
+- am_PlayerCharacterFoodDrainMultiplier=1.000000
+- am_DinoCharacterFoodDrainMultiplier=1.000000
+- am_PlayerCharacterStaminaDrainMultiplier=1.000000
+- am_DinoCharacterStaminaDrainMultiplier=1.000000
+- am_PlayerCharacterHealthRecoveryMultiplier=1.000000
+- am_DinoCharacterHealthRecoveryMultiplier=1.000000
+- am_DinoCountMultiplier=1.000000
+- am_HarvestHealthMultiplier=2.000000
+- am_PvEStructureDecayPeriodMultiplier=1.000000
+- am_ResourcesRespawnPeriodMultiplier=0.250000
+- am_PvPStructureDecay=False
+- am_EnableCryopodNerf=False
+- am_CryopodNerfDuration=0
+- am_CryopodNerfDamageMult=0.01
+- am_CryopodNerfIncomingDamageMultPercent=0.01
+- am_AllowAnyoneBabyImprintCuddle=true
+- am_BabyImprintingStatScaleMultiplier=10
+- am_BabyCuddleIntervalMultiplier=0.1
+- am_BabyMatureSpeedMultiplier=20
+- am_BabyFoodConsumptionSpeedMultiplier=0.1
+- am_LayEggIntervalMultiplier=0.1
+- am_EggHatchSpeedMultiplier=80
+- am_MatingSpeedMultiplier=80
+- am_MatingIntervalMultiplier=0.1
