@@ -27,6 +27,16 @@ For more information on `arkmanager`, see the repo here: https://github.com/FezV
 
 ## Usage
 
+### Installing mods
+arkmanager installmod 1404697612
+arkmanager installmod 566885854
+arkmanager installmod 731604991
+arkmanager installmod 761535755
+arkmanager installmod 821530042
+arkmanager installmod 889745138
+
+
+
 ### Installing the image
 
 Pull the latest (or any other desired version):
