@@ -28,6 +28,21 @@ For more information on `arkmanager`, see the repo here: https://github.com/FezV
 ## Usage
 
 ### Installing mods
+
+Annunaki Genesis
+
+arkmanager installmod 538986229
+
+Structures Plus
+
+arkmanager installmod 731604991
+
+arkmanager installmod 817096835
+
+Teleporters
+
+arkmanager installmod 889745138
+
 arkmanager installmod 1404697612
 
 arkmanager installmod 566885854
@@ -99,7 +114,7 @@ services:
       - am_arkMaxBackupSizeMB=500
       - am_arkflag_crossplay=false
       - am_arkflag_NoBattlEye=true
-      - am_ark_GameModIds=111111111,566885854,731604991,761535755,821530042,889745138,1404697612
+      - am_ark_GameModIds=111111111,566885854,731604991,761535755,821530042,889745138,1404697612,538986229,731604991,817096835,889745138
 ```
 
 If the exposed ports are modified (in the case of multiple containers/servers on the same host) the `arkmanager` config will need to be modified to reflect the change as well. This is required so that `arkmanager` can properly check the server status and so that the ARK server itself can properly publish its IP address and query port to steam.
