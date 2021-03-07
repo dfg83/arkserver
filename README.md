@@ -37,6 +37,8 @@ Structures Plus
 
 arkmanager installmod 731604991
 
+Extinction Core
+
 arkmanager installmod 817096835
 
 Teleporters
