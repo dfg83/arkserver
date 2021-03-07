@@ -18,6 +18,7 @@ services:
     volumes:
       - ark:/ark
       - steam:/home/steam
+      - ./Gamesettings/Config:/ark/config
     environment:
       - Europe/Germany
       - am_ark_SessionName=Ark Docker Session
