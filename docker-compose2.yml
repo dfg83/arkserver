@@ -34,7 +34,7 @@ services:
       - am_arkMaxBackupSizeMB=500
       - am_arkflag_crossplay=false
       - am_arkflag_NoBattlEye=true
-      - am_ark_GameModIds=111111111,566885854,731604991,761535755,821530042,889745138,1404697612,538986229,817096835
+      - am_ark_GameModIds=111111111,566885854,731604991,761535755,821530042,889745138,1404697612,538986229
       - am_OverrideOfficialDifficulty=5.0
       - am_DifficultyOffset=1.0
       - am_NewMaxStructuresInRange=6000.000000
