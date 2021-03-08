@@ -25,6 +25,11 @@ For more information on `arkmanager`, see the repo here: https://github.com/FezV
 | latest | stable build |
 | dev | working build (not-stable) |
 
+###
+$ docker build . -t arkserver:dev
+
+
+
 ## Usage
 
 ### Installing mods
